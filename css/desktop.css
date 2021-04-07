@@ -1,0 +1,23 @@
+@media (min-width: 1024px) {
+    .businesscards {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        width: 94%;
+        margin-left: 3%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .businesscard {
+        margin-left: 15px;
+    }
+
+    .naam {
+        font-size: 2vw;
+    }
+    .ondertitel {
+        font-size: 1.2vw;
+    }
+    .request {
+        font-size: 1.6vw;
+    }
+}

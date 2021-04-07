@@ -1,0 +1,127 @@
+body {
+    height: 90vh;
+    margin: 0;
+    background-color: darksalmon;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+.intro {
+    margin: 20px;
+    font-size: 4vw;
+    text-align: center;
+}
+
+.businesscards {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 94%;
+    margin-left: 3%;
+    display: grid;
+}
+
+header {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+}
+
+.businesscard {
+    font-family: "Roboto Light";
+    border: gray 1px solid;
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 15px;
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 4fr 1fr ;
+    grid-template-rows: 30px 30px 70px 60px;
+}
+.naam {
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;
+}
+.ondertitel {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+.pasfoto {
+    grid-column: 2 / -1;
+    grid-row: 1 / 3;
+}
+.request {
+    grid-column: 1 / -1;
+    grid-row: 3/ 4;
+}
+.buttons {
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+}
+
+.buttons .button:last-child input:last-child {
+    border: red 2px solid;
+    border-radius: 0 7px 7px 0;
+}
+
+.buttons input:first-child {
+    border: green 2px solid;
+    border-radius: 7px 0 0 7px;
+}
+
+
+.naam {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.ondertitel {
+    font-size: 15px;
+    color: gray;
+    padding-left: 10px;
+}
+
+.pasfoto {
+    border: brown 1px solid;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pasfoto-details {
+    max-width: 50px;
+}
+
+.request {
+    font-size: 18px;
+    color: darkgrey;
+    padding: 10px;
+}
+.buttons {
+    height: 100%;
+    width: 100%;
+    border-top: grey 1px solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.button {
+
+}
+.bc-button {
+    align-items: center;
+    height: 40px;
+    width: 85%;
+}
+
+.button-approve {
+    grid-column: 1 / 2;
+    margin: 0;
+    text-align: right;
+}
+.button-decline {
+    grid-column: 2 / 3;
+    margin: 0;
+}
